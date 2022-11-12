@@ -1,0 +1,421 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../../Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../../Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+font-family: Poppins-Medium;
+src: url(../../Montserrat/static/Montserrat-Medium.ttf);
+}
+
+
+/* line 17, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news {
+  width: 82%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+/* line 24, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+/* line 28, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .img-news {
+  width: 100%;
+  height: 270px;
+}
+
+/* line 32, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .img-news img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* line 39, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .title-content-news {
+  margin-top: 30px;
+}
+
+/* line 42, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .title-content-news a {
+  font-size: 24px;
+  font-family: Poppins-Medium;
+  color: #101425;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* line 50, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .title-content-news a:hover {
+  color: #FDA94F;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 57, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .describe-news {
+  font-size: 15px;
+  font-family: Poppins-Regular;
+  color: #666666;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+/* line 64, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .author-news {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* line 69, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+#page-home .total-content .content-items .category-content-news .box-news .author-news .info-author {
+  font-size: 15px;
+  font-family: Poppins-Medium;
+  font-weight: 500;
+  color: #666666;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 2000px) {
+  /* line 91, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .total-items .total-slider-2 {
+    display: none;
+  }
+  /* line 94, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .total-items .total-slider-3 {
+    display: none;
+  }
+  /* line 97, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .total-items .total-slider-4 {
+    display: none;
+  }
+  /* line 103, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  /* line 119, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1112px) {
+  /* line 134, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .header .container .box-header .menu {
+    width: 70%;
+  }
+  /* line 144, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider {
+    display: none;
+  }
+  /* line 147, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-2 {
+    display: block;
+  }
+  /* line 153, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 7%;
+  }
+  /* line 159, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 230px;
+  }
+  /* line 167, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+  /* line 172, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-bottom .box-footer-bottom {
+    width: 100%;
+  }
+  /* line 176, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .copyright {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  /* line 186, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .nav {
+    display: block;
+  }
+  /* line 190, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .nav .navbar .fa-bars {
+    margin-top: 20px;
+  }
+  /* line 193, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .nav .navbar .search-box {
+    display: none;
+  }
+  /* line 201, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .header .container .box-header .menu {
+    width: 40%;
+  }
+  /* line 203, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .header .container .box-header .menu .total-menu {
+    display: none;
+  }
+  /* line 214, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-2 {
+    display: none;
+  }
+  /* line 217, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-3 {
+    display: block;
+  }
+  /* line 223, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 9%;
+  }
+  /* line 229, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 245, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .header .container .box-header .menu .total-menu {
+    display: none;
+  }
+  /* line 256, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-2 {
+    display: none;
+  }
+  /* line 262, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 10%;
+  }
+  /* line 268, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 150px;
+  }
+  /* line 276, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  /* line 291, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 250px;
+  }
+  /* line 295, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .title-content-news a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 311, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* line 314, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .title {
+    margin-left: 35%;
+  }
+  /* line 318, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-3 {
+    display: none;
+  }
+  /* line 321, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-4 {
+    display: block;
+    width: 50%;
+    margin-right: 14%;
+    padding-top: 15px;
+  }
+  /* line 329, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .icon-search .fa-search {
+    font-size: 25px;
+  }
+  /* line 336, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 7%;
+    width: 80%;
+  }
+  /* line 340, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 .fa-search {
+    font-size: 25px;
+  }
+  /* line 344, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+  /* line 348, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news {
+    width: 100%;
+  }
+  /* line 351, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .title-content-news a {
+    font-size: 20px;
+  }
+  /* line 360, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .copyright {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 371, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* line 374, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .title {
+    margin-left: 35%;
+  }
+  /* line 378, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-3 {
+    display: none;
+  }
+  /* line 381, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-4 {
+    display: block;
+    width: 50%;
+    margin-right: 14%;
+    padding-top: 15px;
+  }
+  /* line 389, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .icon-search .fa-search {
+    font-size: 25px;
+  }
+  /* line 396, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 7%;
+    width: 80%;
+  }
+  /* line 400, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 .fa-search {
+    font-size: 25px;
+  }
+  /* line 404, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+  /* line 408, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news {
+    width: 100%;
+  }
+  /* line 411, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .title-content-news a {
+    font-size: 20px;
+  }
+  /* line 420, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .copyright {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* line 432, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .header .container .box-header .logo {
+    margin-left: 10px;
+  }
+  /* line 442, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 170px;
+  }
+  /* line 447, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 450, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .title {
+    margin-left: 24%;
+  }
+  /* line 454, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .total-slider-4 {
+    width: 70%;
+    margin-right: 7%;
+  }
+  /* line 458, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .icon-search {
+    width: 60px;
+  }
+  /* line 460, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular .total-items .icon-search .fa-search {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  /* line 468, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 input {
+    margin-top: 15%;
+    width: 80%;
+  }
+  /* line 472, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .slider-popular-2 .fa-search {
+    font-size: 25px;
+  }
+  /* line 479, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-top {
+    display: block;
+  }
+  /* line 481, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-top .social-footer {
+    margin-top: 10px;
+  }
+  /* line 485, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-bottom {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  /* line 489, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .copyright {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* line 502, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 517, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .total-content .content-items .category-content-news .box-news .img-news {
+    height: 140px;
+  }
+  /* line 525, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-top {
+    height: 110px;
+  }
+  /* line 527, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-top .social-footer {
+    margin-top: 10px;
+  }
+  /* line 529, ../../../../../xampp/htdocs/Mau-BDS/assets/scss/news.scss */
+  #page-home .footer .footer-top .social-footer .social {
+    margin-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=news.css.map */
