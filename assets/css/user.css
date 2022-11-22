@@ -85,7 +85,7 @@
       }
       #page-home .header .container .box-header .menu .total-menu a{
         font-size: 16px;
-        font-family:Poppins-Regular;
+/*         font-family:Poppins-Regular; */
         font-weight: 500;
         color: rgb(255, 255, 255);
         text-decoration: none;
@@ -121,7 +121,7 @@
       }
       #page-home .header .container .box-header .menu .listing a{
        text-decoration: none;
-       font-family: Poppins-Regular;
+/*        font-family: Poppins-Regular; */
        font-weight: 500;
        color: #fff
       }
@@ -143,22 +143,22 @@
       }
       .DNDK>p>a{
        font-size:20px;
-       font-family: Poppins-regular;
+/*        font-family: Poppins-regular; */
        text-decoration: none;
        color:rgb(0, 0, 0);
       }
-      .nhap{
+      .nhap>form{
         width: 900px;
         height: auto;
         padding-top: 50px;
         margin-left: 30px;
       }
-      .nhap>label{
+      .nhap>form>label{
         font-size: 20px;
-        font-family: Poppins-regular;
+/*         font-family: Poppins-regular; */
         line-height:35px;
       }
-      .nhap>input{
+      .nhap>form>input{
         width: 800px;
         height: 35px;
         border-radius: 20px;
@@ -167,14 +167,14 @@
         backdrop-filter: blur(10px);
         border: 1px solid grey;
       }
-      .nhap>button{
+      .nhap>form>button{
         margin-top: 20px;
         width: 150px;
         height: 40px;
         border: none;
         border-radius: 30px;
       }
-      .nhap>button>a{
+      .nhap>form>button>a{
         text-decoration: none;
         color: black;
       }

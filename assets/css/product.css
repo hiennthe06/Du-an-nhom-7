@@ -16,6 +16,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
     border: none;
     font-size: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   ol ul {
     list-style: none;
@@ -26,7 +27,6 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
-    scroll-behavior: smooth;
   }
   main {
     height: 100%;
@@ -88,7 +88,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .header .container .box-header .menu .total-menu a{
     font-size: 16px;
-    font-family:Poppins-Regular;
+/*     font-family:Poppins-Regular; */
     font-weight: 500;
     color: #222;
     text-decoration: none;
@@ -124,7 +124,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .header .container .box-header .menu .listing a{
    text-decoration: none;
-   font-family: Poppins-Regular;
+/*    font-family: Poppins-Regular; */
    font-weight: 500;
    color: #fff
   }
@@ -317,7 +317,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
     }
     nav .navbar .links li a{
       font-size: 16px;
-      font-family: Poppins-Medium;
+/*       font-family: Poppins-Medium; */
       color: #101425;
     }
     }
@@ -445,13 +445,13 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .total-content .title-website .best-way{
     font-size: 16px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     color: #ffffff;
     margin-top: 24px;
   }
   #page-home .total-content .title-website .title-home{
     font-size: 55px;
-    font-family: Poppins-Bold;
+/*     font-family: Poppins-Bold; */
     font-weight: 700;
     color: #ffffff;
   }
@@ -480,7 +480,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
 }
 #page-home .total-content .content-items .btn-category .btn a{
    font-size: 16px;
-   font-family: Poppins-Medium;
+/*    font-family: Poppins-Medium; */
    font-weight: 500;
    color: #FDA94F;
    text-decoration: none;
@@ -537,7 +537,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
     display: flex;
     align-items: center;
     font-size: 14px;
-    font-family: Poppins-Regualar;
+/*     font-family: Poppins-Regualar; */
     margin-top: 25px;
     margin-bottom: 25px;
   }
@@ -546,7 +546,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .total-content .content-items .product-items .product-mon .title-product-2 a{
   font-size: 16px;
-  font-family: Poppins-Regular;
+/*   font-family: Poppins-Regular; */
   font-weight: 600;
   color: #101425;
   margin-left: 10%;
@@ -562,14 +562,14 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .total-content .content-items .product-items .product-mon .price-product-2 b{
     font-size: 17px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     font-weight: 600;
     color: #101425;
     margin-left: 10%;
   }
   #page-home .total-content .content-items .product-items .product-mon .price-product-2 del{
     font-size: 17px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     font-weight: 600;
     color: #c3cfe1;
     margin-left: 3%;
@@ -645,7 +645,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .total-content .content-items .product-items .product-mon .intro-house p{
     font-size: 13px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     color: #101425;
     margin-left: 10px;
   }
@@ -672,7 +672,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
 }
 #page-home .total-content .content-items .top-author .title-author{
     font-size: 40px;
-    font-family: Poppins-Medium;
+/*     font-family: Poppins-Medium; */
     font-weight: 500;
     color: #101425;
 }
@@ -708,7 +708,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
 #page-home .total-content .content-items .top-author .total-col .box-author .view a{
   text-decoration: none;
   font-size: 15px;
-  font-family: Poppins-Medium;
+/*   font-family: Poppins-Medium; */
   font-weight: 600;
   color: #666666;
 }
@@ -759,7 +759,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .footer .footer-top .social-footer h3{
     font-size: 15px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     margin-right: 20px;
     margin-top: 10px;
   
@@ -783,7 +783,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .footer .footer-bottom .box-footer-bottom .title-footer{
     font-size: 24px;
-    font-family: Poppins-Bold;
+/*     font-family: Poppins-Bold; */
     font-weight: 700;
     color: #101425;
   }
@@ -793,7 +793,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   #page-home .footer .footer-bottom .box-footer-bottom .content-footer a{
     text-decoration: none;
     font-size: 15px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     font-weight: 400;
     color: #666666;
   }
@@ -835,7 +835,7 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
     background-color: #FDA94F;
     color: #ffffff;
     font-size: 15px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     border-radius: 5px;
     margin-top: 10px;
   }
@@ -850,11 +850,11 @@ src: url(../../Montserrat/static/Montserrat-Medium.ttf);
   }
   #page-home .footer .copyright p{
     font-size: 15px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
   }
   #page-home .footer .copyright a{
     font-size: 15px;
-    font-family: Poppins-Regular;
+/*     font-family: Poppins-Regular; */
     text-decoration: none;
     color: #101425;
   }
