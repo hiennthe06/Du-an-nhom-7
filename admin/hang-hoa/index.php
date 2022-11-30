@@ -6,17 +6,20 @@ $data = [];
         switch ($page) {
             case 'new':
                 if(isset($_POST['btn-add'])){
-
-                    $room_price = $_POST['room_price'];
-                    $room_discount = $_POST['room_discount'];
-                    $target_dir = "../../content/images/product/";
-                    $room_image = $_FILES['room_image']['name'];
-                    move_uploaded_file('room_image', $target_dir);
-                    $room_describe = $_POST['room_describe'];
-                    $type_id = $_POST['room_type'];
+                    $ten_hang = $_POST['ten_hang'];
+                    $don_gia = $_POST['don_gia'];
+                    $giam_gia = $_POST['giam_gia'];
+                    ///
+                    $target_dir = "../content/images/product/";
+                    $hinh = $_FILES['hinh']['name'];
+                    move_uploaded_file('hinh', $target_dir);
+                    ///
+                    $ngay_nhap = $_POST['ngay_nhap'];
+                    $mo_ta = $_POST['mo_ta'];
+                    $dac_biet = $_POST['dac_biet'];
+                    $ma_loai = $_POST['loai'];
                     
-                    $conn = set_hang_hoa($room_price, $room_discount, $room_image, $room_describe, $type_id);
-
+                    $conn = set_hang_hoa($ten_hang, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $ma_loai);
                     if($conn){
                         $data['thong_bao'] = "Thêm thành công";
                     }
@@ -24,7 +27,7 @@ $data = [];
                         $data['thong_bao'] = "Thêm thất bại";
                     }
                 }
-                $data['room_type'] = get_loai();
+                $data['loai'] = get_loai();
                 include 'new.php';
                 break;
                 ////
@@ -34,66 +37,65 @@ $data = [];
                 break;
                 ////
             case 'edit':
-                
                 if(isset($_POST['btn-update'])){
-                    $room_id = $_POST['room_id'];
-                    $room_price1 = $_POST['room_price1'];
-                    $room_discount = $_POST['room_discount'];
+                    $ma_hh = $_POST['ma_hh'];
+                    $ten_hang = $_POST['ten_hang'];
+                    $don_gia1 = $_POST['don_gia1'];
+                    $giam_gia = $_POST['giam_gia'];
                     // Lưu hình
-                    $hinh_id = get_ma_hang_hoa($room_id);
-                    $room_image = $_FILES['room_image']['name'];
-                    if($room_image == null){
-                        $room_image = $hinh_id['room_image'];
+                    $hinh_id = get_ma_hang_hoa($ma_hh);
+                    $hinh = $_FILES['hinh']['name'];
+                    if($hinh == null){
+                        $hinh = $hinh_id['hinh'];
                     }
                     else{
-                        $target_dir = "../../content/images/product/";
-                        $room_image = move_uploaded_file('room_image', $target_dir);
+                        $target_dir = "../content/images/product/";
+                        $hinh = move_uploaded_file('hinh', $target_dir);
                     }
-                    $room_describe= $_POST['room_describe'];
-                    $type_id = $_POST['room_type'];
-
-                    
-                    $conn = update_hang_hoa($room_price1, $room_discount, $room_image, $room_describe, $type_id, $room_id);
+                    ///
+                    $ngay_nhap = $_POST['ngay_nhap'];
+                    $mo_ta = $_POST['mo_ta'];
+                    $dac_biet = $_POST['dac_biet'];
+                    $ma_loai = $_POST['loai'];
+                    $conn = update_hang_hoa($ten_hang, $don_gia1, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $ma_loai, $ma_hh);
                     if(!$conn){
                         $data['thong_bao'] = "Sửa thành công";
                     }
                     else{
                         $data['thong_bao'] = "Sửa thất bại";
                     }
-                    $data['room_type'] = get_loai();
-                    $data['hang_list'] = get_ma_hang_hoa($room_id);
+                    $data['loai'] = get_loai();
+                    $data['hang_list'] = get_ma_hang_hoa($ma_hh);
                     include 'edit.php';
                 }
-
-
                 else if(isset($_POST['btn-delete'])){
-                    $room_id = $_POST['room_id'];
-                    $conn = delete_hang_hoa($room_id);
+                    $ma_hh = $_POST['ma_hh'];
+                    $conn = delete_hang_hoa($ma_hh);
                     if($conn){
-                        $data['thong_bao'] = "Xóa thành công phòng: ".$_POST['room_id'];
+                        $data['thong_bao'] = "Xóa thành công: ".$_POST['ten_hang'];
                     }
                     else{
-                        $data['thong_bao'] = "Xóa thất bại phòng: ".$_POST['room_id'];
+                        $data['thong_bao'] = "Xóa thất bại: ".$_POST['ten_hang'];
                     }
-                    $data['hang_list'] = get_ma_hang_hoa($room_id);
+                    $data['hang_list'] = get_ma_hang_hoa($ma_hh);
                     include 'edit.php';
                 }
                 else if(isset($_GET['btn-deleta'])){
-                    $room_id = $_GET['room_id'];
-                    $conn = delete_hang_hoa($room_id);
+                    $ma_hh = $_GET['ma_hh'];
+                    $conn = delete_hang_hoa($ma_hh);
                     if(!$conn){
-                        $data['thong_bao'] = "Xóa thành công phòng: ".$_GET['room_id'];
+                        $data['thong_bao'] = "Xóa thành công: ".$_GET['ten_hh'];
                     }
                     else{
-                        $data['thong_bao'] = "Xóa thất bại phòng: ".$_GET['room_id'];
+                        $data['thong_bao'] = "Xóa thất bại: ".$_GET['ten_hh'];
                     }
                     $data['list-hang'] = get_hang_hoa();
                 include 'list.php';
                 }
                 else{
-                    $room_id = $_GET['room_id'];
-                    $data['room_type'] = get_loai();
-                    $data['hang_list'] = get_ma_hang_hoa($room_id);
+                    $ma_hh = $_GET['ma_hh'];
+                    $data['loai'] = get_loai();
+                    $data['hang_list'] = get_ma_hang_hoa($ma_hh);
                     include 'edit.php';
                 }
                 break;  
@@ -104,7 +106,7 @@ $data = [];
         }
     }
     else{
-        $data['room_type'] = get_loai();
+        $data['loai'] = get_loai();
         include 'new.php';
     }
 ?>

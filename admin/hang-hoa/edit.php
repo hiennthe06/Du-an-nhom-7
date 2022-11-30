@@ -51,41 +51,39 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <span class="align-middle">Quản lý website</span>
+          <span class="align-middle">Quản lý khách sạn</span>
         </a>
 
         <ul class="sidebar-nav">
-            <li class="sidebar-header">
-                Pages
-            </li>
+            
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/loai-hang/index.php?action=loai-hang&page=list">
-      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại hàng</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/loai-hang/index.php?action=loai-hang&page=list">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/hang-hoa/index.php?action=hang-hoa&page=list">
-      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Hàng hóa</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/hang-hoa/index.php?action=hang-hoa&page=list">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Thêm phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/khach-hang/index.php?action=khach-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/khach-hang/index.php?action=khach-hang&page=list">
       <i class="align-middle" data-feather="square"></i> <span class="align-middle">Khách hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/binh-luan/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/binh-luan/">
       <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Bình luận</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/thong-ke/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/thong-ke/">
       <i class="align-middle" data-feather="book"></i> <span class="align-middle">Thống kê</span>
     </a>
             </li>
@@ -275,7 +273,7 @@
 				<div class="container-fluid p-0">
 
 					<div class="mb-3">
-						<h1 class="h3 d-inline align-middle">Sửa hàng hóa</h1>
+						<h1 class="h3 d-inline align-middle">Sửa phòng</h1>
 
 
                             <!-- Code nội dung vào đây -->
@@ -307,47 +305,72 @@
     <div class="card">
         <div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Mã hàng hóa</b>
-          <input type="text" name="room_id" id="" class="form-control" placeholder="" aria-describedby="helpId" value="<?php echo $data['hang_list']['room_id']?>" readonly>        
+          <b id="helpId" class="text-muted">Mã phòng</b>
+          <input type="text" name="ma_hh" id="" class="form-control" placeholder="" aria-describedby="helpId" value="<?php echo $data['hang_list']['ma_hh']?>" readonly>        
         </div>
         
 		<div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Đơn giá</b>
-          <input type="text" name="room_price1" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['room_price']?>" aria-describedby="helpId">        
+          <b id="helpId" class="text-muted">Số phòng</b>
+          <input type="text" name="ten_hang" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['ten_hh']?>" aria-describedby="helpId">        
+        </div>
+
+		<div class="form-group">
+          <label for=""></label>
+          <b id="helpId" class="text-muted">Ảnh phòng</b>         
+          <input type="file" class="form-control-file border" name="hinh">     
+        </div>
+
+		<div class="form-group">
+          <label for=""></label>
+          <b id="helpId" class="text-muted">Giá phòng</b>
+          <input type="text" name="don_gia1" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['don_gia']?>" aria-describedby="helpId">        
         </div>
 
         <div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Giảm giá</b>
-          <input type="text" name="room_discount" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['room_discount']?>" aria-describedby="helpId">        
+          <b id="helpId" class="text-muted">Giá giảm</b>
+          <input type="text" name="giam_gia" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['giam_gia']?>" aria-describedby="helpId">        
         </div>
         
-		<div class="form-group">
+        <div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Hình ảnh</b>         
-          <input type="file" class="form-control-file border" name="room_image">     
+          <b id="helpId" class="text-muted">Phòng VIP</b></br>             
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="dac_biet" value="1" <?php if($data['hang_list']['dac_biet'] == 1){
+                                                                                              echo "checked"; } ?>>Có
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="dac_biet" value="0" <?php if($data['hang_list']['dac_biet'] == 0){
+                                                                                              echo "checked"; } ?>>Không
+                </label>
+            </div>
         </div>
-
-		<div class="form-group">
-			<label for="comment"><b>Mô tả</b></label>
-			<textarea class="form-control" rows="5" id="comment" name="room_describe"><?php echo $data['hang_list']['room_describe']?></textarea>
-    	</div>
+		
 
 		<div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Số lượt xem</b>
-          <input type="text" name="room_price" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['room_view']?>" aria-describedby="helpId" readonly>        
+          <b id="helpId" class="text-muted">Ngày đặt phòng</b>
+          <input type="date" name="ngay_nhap" id="" class="form-control" placeholder="" value="<?php echo $data['hang_list']['ngay_nhap']?>" aria-describedby="helpId">        
         </div>
+		
+		<div class="form-group">
+        <label for="comment"><b>Mô tả</b></label>
+        <textarea class="form-control" rows="5" id="comment" name="mo_ta"><?php echo $data['hang_list']['mo_ta']?></textarea>
+    </div>
 
+		
 		<div class="form-group">
           <label for=""></label>
-          <b id="helpId" class="text-muted">Loại hàng</b>
-          <select class="form-control" id="sel1" name="room_type">
+          <b id="helpId" class="text-muted">Loại Phòng</b>
+          <select class="form-control" id="sel1" name="loai">
                 <?php
-                     foreach($data['room_type'] as $key){
+                     foreach($data['loai'] as $key){
                        echo'
-                        <option value="'.$key['type_id'].'">'.$key['type_name'].'</option>
+                        <option value="'.$key['ma_loai'].'">'.$key['ten_loai'].'</option>
                        ';
                     }
                 ?>
@@ -356,10 +379,8 @@
 
     </div>
 
-
 </div>
 
-  
 
     <button type="submit" class="btn btn-primary" name="btn-update">Cập nhật</button>
     <button type="submit" class="btn btn-primary" name="btn-delete">Xóa</button>

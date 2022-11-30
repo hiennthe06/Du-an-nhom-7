@@ -52,7 +52,7 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <span class="align-middle">Quản lý website</span>
+          <span class="align-middle">Quản lý khách sạn</span>
         </a>
 
         <ul class="sidebar-nav">
@@ -62,31 +62,31 @@
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/loai-hang/index.php?action=loai-hang&page=list">
-      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại hàng</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/loai-hang/index.php?action=loai-hang&page=list">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/hang-hoa/index.php?action=hang-hoa&page=list">
-      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Hàng hóa</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/hang-hoa/index.php?action=hang-hoa&page=list">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Thêm phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/khach-hang/index.php?action=khach-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/khach-hang/index.php?action=khach-hang&page=list">
       <i class="align-middle" data-feather="square"></i> <span class="align-middle">Khách hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/binh-luan/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/binh-luan/">
       <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Bình luận</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/thong-ke/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/thong-ke/">
       <i class="align-middle" data-feather="book"></i> <span class="align-middle">Thống kê</span>
     </a>
             </li>
@@ -275,7 +275,7 @@
 				<div class="container-fluid p-0">
 
 					<div class="mb-3">
-						<h1 class="h3 d-inline align-middle">Danh sách hàng hóa</h1>
+						<h1 class="h3 d-inline align-middle">Danh sách Phòng</h1>
 
 
                             <!-- Code nội dung vào đây -->
@@ -301,17 +301,18 @@
                         <div class="table-responsive">
                             <?php
                             if (isset($data['thong_bao'])) {
-                                echo '<h3 class="alert alert-success">'. $data['thong_bao'] . '</h3>';
+                                echo '<h3 class="alert alert-success">' . $data['thong_bao'] . '</h3>';
                             }
                             ?>
                             <form action="#" method="post">
                                 <table class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Mã hàng</th>
-                                            <th>Hình ảnh</th>
-                                            <th>Đơn giá</th>
-                                            <th>Giảm giá</th>
+                                            <th>Mã phòng</th>
+                                            <th>Số phòng</th>
+                                            <th>Ảnh phòng</th>
+                                            <th>Giá phòng</th>
+                                            <th>Giá giảm</th>
                                             <th>Lượt xem</th>
                                             <th></th>
                                             <th></th>
@@ -322,19 +323,20 @@
                                         foreach ($data['list-hang'] as $key) {
                                             echo '
                         <tr>
-                            <td scope="row">' . $key['room_id'] . '</td>
-                            <td><img src="../../content/images/product/' . $key['room_image'] . '" style="width:50px;height:50px"></td>
-                            <td>' . $key['room_price'] . '</td>
-                            <td>' . $key['room_discount'] . '</td>
-                            <td>' . $key['room_view'] . '</td>
-                            <td><a href="./index.php?action=hang-hoa&page=edit&room_id=' . $key['room_id'] . '"  class="btn btn-primary">Sửa</a></td>
-                            <td><a href="./index.php?action=hang-hoa&page=edit&btn-deleta&room_id=' . $key['room_id'] . '&room_id=' . $key['room_id'] . '" class="btn btn-primary">Xóa</a></td>
+                            <td scope="row">' . $key['ma_hh'] . '</td>
+                            <td>' . $key['ten_hh'] . '</td>
+                            <td><img src="../../content/images/product/' . $key['hinh'] . '" style="width:50px;height:50px"></td>
+                            <td>' . $key['don_gia'] . '</td>
+                            <td>' . $key['giam_gia'] . '</td>
+                            <td>' . $key['so_luot_xem'] . '</td>
+                            <td><a href="./index.php?action=hang-hoa&page=edit&ma_hh=' . $key['ma_hh'] . '"  class="btn btn-primary">Sửa</a></td>
+                            <td><a href="./index.php?action=hang-hoa&page=edit&btn-deleta&ma_hh=' . $key['ma_hh'] . '&ten_hh=' . $key['ten_hh'] . '" class="btn btn-primary">Xóa</a></td>
                         </tr>';
                                         }
                                         ?>
                                     </tbody>
                                 </table>
-                                <a href="index.php?action=hang-hoa" class="btn btn-primary">Thêm sản phẩm mới</a>
+                                <a href="index.php?action=hang-hoa" class="btn btn-primary">Thêm phòng mới</a>
                             </form>
 
 

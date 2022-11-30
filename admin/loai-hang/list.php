@@ -51,41 +51,39 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <span class="align-middle">Quản lý website</span>
+          <span class="align-middle">Quản lý khách sạn</span>
         </a>
 
 		<ul class="sidebar-nav">
-            <li class="sidebar-header">
-                Pages
-            </li>
+           
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/loai-hang/index.php?action=loai-hang&page=list">
-      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại hàng</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/loai-hang/index.php?action=loai-hang&page=list">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/hang-hoa/index.php?action=hang-hoa&page=list">
-      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Hàng hóa</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/hang-hoa/index.php?action=hang-hoa&page=list">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Thêm phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/khach-hang/index.php?action=khach-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/khach-hang/index.php?action=khach-hang&page=list">
       <i class="align-middle" data-feather="square"></i> <span class="align-middle">Khách hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/binh-luan/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/binh-luan/">
       <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Bình luận</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/thong-ke/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/thong-ke/">
       <i class="align-middle" data-feather="book"></i> <span class="align-middle">Thống kê</span>
     </a>
             </li>
@@ -275,7 +273,7 @@
 				<div class="container-fluid p-0">
 
 					<div class="mb-3">
-						<h1 class="h3 d-inline align-middle">Danh sách loại hàng</h1>
+						<h1 class="h3 d-inline align-middle">Danh sách loại phòng</h1>
 
 
                             <!-- Code nội dung vào đây -->
@@ -306,7 +304,7 @@
                                         <tr>
                                             <th></th>
                                             <th>Mã loại</th>
-                                            <th>Tên loại</th>
+                                            <th>Tên loại phòng</th>
                                             <th></th>
                                             <th></th>
                                         </tr>
@@ -321,10 +319,10 @@
                                 <div class="form-check">
                                 </div>
                             </td>
-                            <td scope="row">' . $key['type_id'] . '</td>
-                            <td>' . $key['type_name'] . '</td>
-                            <td><a href="./index.php?action=loai-hang&page=edit&type_id=' . $key['type_id'] . '" class="btn btn-primary">Sửa</a></td>
-                            <td><a href="./index.php?action=loai-hang&page=edit&btn-deleta&type_id=' . $key['type_id'] . '&type_name=' . $key['type_name'] . '" class="btn btn-primary">Xóa</a></td>
+                            <td scope="row">' . $key['ma_loai'] . '</td>
+                            <td>' . $key['ten_loai'] . '</td>
+                            <td><a href="./index.php?action=loai-hang&page=edit&ma_loai=' . $key['ma_loai'] . '" class="btn btn-primary">Sửa</a></td>
+                            <td><a href="./index.php?action=loai-hang&page=edit&btn-deleta&ma_loai=' . $key['ma_loai'] . '&ten_loai=' . $key['ten_loai'] . '" class="btn btn-primary">Xóa</a></td>
                         </tr>
                     ';
                                         }

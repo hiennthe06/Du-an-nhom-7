@@ -62,31 +62,31 @@
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/loai-hang/index.php?action=loai-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/loai-hang/index.php?action=loai-hang&page=list">
       <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/hang-hoa/index.php?action=hang-hoa&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/hang-hoa/index.php?action=hang-hoa&page=list">
       <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Hàng hóa</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/khach-hang/index.php?action=khach-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/khach-hang/index.php?action=khach-hang&page=list">
       <i class="align-middle" data-feather="square"></i> <span class="align-middle">Khách hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/binh-luan/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/binh-luan/">
       <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Bình luận</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/thong-ke/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/thong-ke/">
       <i class="align-middle" data-feather="book"></i> <span class="align-middle">Thống kê</span>
     </a>
             </li>

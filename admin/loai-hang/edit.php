@@ -52,7 +52,7 @@
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
-          <span class="align-middle">Quản lý website</span>
+          <span class="align-middle">Quản lý khách sạn</span>
         </a>
 
         <ul class="sidebar-nav">
@@ -62,31 +62,31 @@
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/loai-hang/index.php?action=loai-hang&page=list">
-      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại hàng</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/loai-hang/index.php?action=loai-hang&page=list">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Loại phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/hang-hoa/index.php?action=hang-hoa&page=list">
-      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Hàng hóa</span>
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/hang-hoa/index.php?action=hang-hoa&page=list">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Thêm phòng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/khach-hang/index.php?action=khach-hang&page=list">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/khach-hang/index.php?action=khach-hang&page=list">
       <i class="align-middle" data-feather="square"></i> <span class="align-middle">Khách hàng</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/binh-luan/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/binh-luan/">
       <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Bình luận</span>
     </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="http://localhost/Du_An_Mau/admin/thong-ke/">
+                <a class="sidebar-link" href="http://localhost/Du-an-nhom-7/admin/thong-ke/">
       <i class="align-middle" data-feather="book"></i> <span class="align-middle">Thống kê</span>
     </a>
             </li>
@@ -276,7 +276,7 @@
 				<div class="container-fluid p-0">
 
 					<div class="mb-3">
-						<h1 class="h3 d-inline align-middle">Sửa loại hàng</h1>
+						<h1 class="h3 d-inline align-middle">Sửa loại phòng</h1>
 
 
                             <!-- Code nội dung vào đây -->
@@ -303,12 +303,12 @@
               <div class="form-group">
                 <label for=""></label>
                 <b id="helpId" class="form-text text-muted">Mã loại</b>
-                <input type="text" class="form-control" name="type_id" id="" value="<?php echo $data['sl_list']['type_id'] ?>" aria-describedby="helpId" placeholder="" readonly>
+                <input type="text" class="form-control" name="ma_loai" id="" value="<?php echo $data['sl_list']['ma_loai'] ?>" aria-describedby="helpId" placeholder="" readonly>
               </div>
               <div class="form-group">
                 <label for=""></label>
-                <b id="helpId" class="form-text text-muted">Tên loại</b>
-                <input type="text" class="form-control" name="type_name" id="" value="<?php echo $data['sl_list']['type_name'] ?>" aria-describedby="helpId" placeholder="">
+                <b id="helpId" class="form-text text-muted">Tên loại phòng</b>
+                <input type="text" class="form-control" name="ten_loai" id="" value="<?php echo $data['sl_list']['ten_loai'] ?>" aria-describedby="helpId" placeholder="">
               </div>
               <br> <br>
               <button type="submit" class="btn btn-primary" name="btn-update">Cập nhật</button>

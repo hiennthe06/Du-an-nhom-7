@@ -1,23 +1,23 @@
 <?php
 require_once 'pdo.php';
-    function set_loai($type_name){
-        $sql = "INSERT INTO room_type(type_id, type_name) VALUES(null,?)";
-        return pdo_execute($sql, $type_name);
+    function set_loai($ten_loai){
+        $sql = "INSERT INTO loai(ma_loai, ten_loai) VALUES(null,?)";
+        return pdo_execute($sql, $ten_loai);
     }
     function get_loai(){
-        $sql = "SELECT * FROM room_type";
+        $sql = "SELECT * FROM loai";
         return pdo_query($sql);
     }
-    function get_ma_loai($type_id){
-        $sql = "SELECT * FROM room_type WHERE type_id = ?";
-        return pdo_query_one($sql, $type_id);
+    function get_ma_loai($ma_loai){
+        $sql = "SELECT * FROM loai WHERE ma_loai = ?";
+        return pdo_query_one($sql, $ma_loai);
     }
-    function update_loai($type_name, $type_id){
-        $sql = "UPDATE room_type SET type_name = ? WHERE type_id = ?";
-        return pdo_query_one($sql, $type_name, $type_id);
+    function update_loai($ten_loai, $ma_loai){
+        $sql = "UPDATE loai SET ten_loai = ? WHERE ma_loai = ?";
+        return pdo_query_one($sql, $ten_loai, $ma_loai);
     }
-    function delete_loai($type_id){
-        $sql = "DELETE FROM room_type WHERE type_id= ?";
-        return pdo_query_one($sql, $type_id);
+    function delete_loai($ma_loai){
+        $sql = "DELETE FROM loai WHERE ma_loai= ?";
+        return pdo_query_one($sql, $ma_loai);
     }
 ?>
